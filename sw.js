@@ -10,11 +10,8 @@ self.addEventListener('fetch', (event) => {
         (async () => {
             console.log('Request intercepted:', event.request);
 
-            if (event.request.url.includes('chrome-extension')) {
-                console.warn(
-                    'Request to Chrome extension:',
-                    event.request.url.replace('chrome-extension://', '')
-                );
+            if (!event.request.url.includes(self.location.origin)) {
+                console.warn('Fetching external file:', event.request.url);
             } else {
                 return fetch(event.request);
             }
