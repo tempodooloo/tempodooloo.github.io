@@ -1,0 +1,25 @@
+{
+    "name": "tempodooloo PWA",
+    "short_name": "tmdl pwa",
+    "description": "Wooowww PWA",
+    "theme_color": "#2b4297",
+    "background_color": "#ededee",
+    "display": "standalone",
+    "orientation": "any",
+    "dir": "auto",
+    "lang": "nl-NL",
+    "icons": [
+        {
+            "purpose": "maskable",
+            "sizes": "512x512",
+            "src": "images/icons/icon512_maskable.png",
+            "type": "image/png"
+        },
+        {
+            "purpose": "any",
+            "sizes": "512x512",
+            "src": "images/icons/icon512_rounded.png",
+            "type": "image/png"
+        }
+    ],
+}
